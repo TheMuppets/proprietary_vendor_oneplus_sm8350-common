@@ -93,6 +93,14 @@ getgid32: 1
 getegid32: 1
 getgroups32: 1
 
+#ifdef OPLUS_FEATURE_VIDEOLOGKIT
+#Yangwen@MULTIMEDIA.MEDIASERVER.PLAYER,20220615,for c2for8350 video dump
+unlinkat: 1
+mkdirat: 1
+flock: 1
+fchmod: 1
+#endif /*OPLUS_FEATURE_VIDEOLOGKIT*/
+
 #ifdef OPLUS_FEATURE_OSIE_SR
 #shumin.nie@MULTIMEDIA.MMSERVER.PLAYER, 2020/11/10, Add for OSIE and SR
 inotify_init1: 1
