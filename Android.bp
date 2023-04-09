@@ -308,27 +308,9 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "manifest_oplus_cameraextension",
-	owner: "oneplus",
-	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_cameraextension.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	device_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "manifest_oplus_cwb",
 	owner: "oneplus",
 	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_cwb.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	device_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "manifest_oplus_fingerprint",
-	owner: "oneplus",
-	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	device_specific: true,
