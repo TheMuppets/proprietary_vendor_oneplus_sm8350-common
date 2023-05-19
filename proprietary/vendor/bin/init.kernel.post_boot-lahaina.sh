@@ -88,9 +88,9 @@ function oplus_configure_tunning_swappiness() {
         echo 0 > /proc/sys/vm/vm_swappiness_threshold2
         echo 0 > /proc/sys/vm/swappiness_threshold2_size
     elif [ $MemTotal -le 8388608 ]; then
-        echo 100 > /proc/sys/vm/vm_swappiness_threshold1
+        echo 70 > /proc/sys/vm/vm_swappiness_threshold1
         echo 2000 > /proc/sys/vm/swappiness_threshold1_size
-        echo 120 > /proc/sys/vm/vm_swappiness_threshold2
+        echo 90 > /proc/sys/vm/vm_swappiness_threshold2
         echo 1500 > /proc/sys/vm/swappiness_threshold2_size
     else
         echo 100 > /proc/sys/vm/vm_swappiness_threshold1

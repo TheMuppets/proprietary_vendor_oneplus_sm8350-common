@@ -192,7 +192,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8350-common/proprietary/odm/lib/liboplusvppfilter.so:$(TARGET_COPY_OUT_ODM)/lib/liboplusvppfilter.so \
     vendor/oneplus/sm8350-common/proprietary/odm/lib/libosie_process.so:$(TARGET_COPY_OUT_ODM)/lib/libosie_process.so \
     vendor/oneplus/sm8350-common/proprietary/odm/lib/libosie_stub.so:$(TARGET_COPY_OUT_ODM)/lib/libosie_stub.so \
-    vendor/oneplus/sm8350-common/proprietary/odm/lib/vendor.oplus.hardware.performance@1.0.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.performance@1.0.so \
+    vendor/oneplus/sm8350-common/proprietary/odm/lib/vendor.oplus.hardware.performance-V1-ndk_platform.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.performance-V1-ndk_platform.so \
     vendor/oneplus/sm8350-common/proprietary/odm/lib64/libQnnHtpAltPrepStub.so:$(TARGET_COPY_OUT_ODM)/lib64/libQnnHtpAltPrepStub.so \
     vendor/oneplus/sm8350-common/proprietary/odm/lib64/libQnnHtpStub.so:$(TARGET_COPY_OUT_ODM)/lib64/libQnnHtpStub.so \
     vendor/oneplus/sm8350-common/proprietary/odm/lib64/liboemcrypto.so:$(TARGET_COPY_OUT_ODM)/lib64/liboemcrypto.so \
@@ -212,7 +212,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8350-common/proprietary/odm/lib64/vendor.oplus.hardware.appradio@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.appradio@1.0.so \
     vendor/oneplus/sm8350-common/proprietary/odm/lib64/vendor.oplus.hardware.cwb@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.cwb@1.0.so \
     vendor/oneplus/sm8350-common/proprietary/odm/lib64/vendor.oplus.hardware.ims@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.ims@1.0.so \
-    vendor/oneplus/sm8350-common/proprietary/odm/lib64/vendor.oplus.hardware.performance@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.performance@1.0.so \
+    vendor/oneplus/sm8350-common/proprietary/odm/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so \
     vendor/oneplus/sm8350-common/proprietary/odm/lib64/vendor.oplus.hardware.radio@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.radio@1.0.so \
     vendor/oneplus/sm8350-common/proprietary/odm/lib64/vendor.pixelworks.hardware.display@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.pixelworks.hardware.display@1.0.so \
     vendor/oneplus/sm8350-common/proprietary/odm/lib64/vendor.pixelworks.hardware.display@1.1.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.pixelworks.hardware.display@1.1.so \
@@ -1220,8 +1220,8 @@ PRODUCT_PACKAGES += \
     IWlanService \
     TimeService \
     PowerOffAlarm \
-    HotwordEnrollmentOKGoogleHEXAGON \
-    HotwordEnrollmentXGoogleHEXAGON \
+    HotwordEnrollmentOKGoogle \
+    HotwordEnrollmentXGoogle \
     ImsRcsService \
     QtiTelephony \
     QtiTelephonyService \
