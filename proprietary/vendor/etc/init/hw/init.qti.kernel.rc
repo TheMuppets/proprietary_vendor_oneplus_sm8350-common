@@ -61,9 +61,6 @@ on init
     write /dev/cpuctl/background/cpu.uclamp.colocate 0
     write /dev/cpuctl/foreground/cpu.uclamp.colocate 0
     write /dev/cpuctl/top-app/cpu.uclamp.colocate 1
-#ifdef OPLUS_FEATURE_INPUT_BOOST
-    write /dev/cpuctl/top-app/cpu.uclamp.colocate 0
-#endif
 
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
