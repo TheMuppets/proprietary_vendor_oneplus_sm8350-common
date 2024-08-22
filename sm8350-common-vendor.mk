@@ -1239,6 +1239,7 @@ PRODUCT_PACKAGES += \
     com.android.hotwordenrollment.common.util \
     com.qti.dpmframework \
     dpmapi \
+    oplus-ims-ext \
     qcrilhook \
     vendor.qti.hardware.alarm-V1.0-java \
     vendor.qti.ims.factory-V2.0-java \
