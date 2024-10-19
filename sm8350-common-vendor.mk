@@ -1097,8 +1097,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8350-common/proprietary/vendor/lib64/qcrild_libqcrilnrutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcrild_libqcrilnrutils.so \
     vendor/oneplus/sm8350-common/proprietary/vendor/lib64/qtiril-utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtiril-utils.so \
     vendor/oneplus/sm8350-common/proprietary/vendor/lib64/qtiwakelock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtiwakelock.so \
-    vendor/oneplus/sm8350-common/proprietary/vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/rfsa/adsp/libsns_device_mode_skel.so \
-    vendor/oneplus/sm8350-common/proprietary/vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so \
     vendor/oneplus/sm8350-common/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
     vendor/oneplus/sm8350-common/proprietary/vendor/lib64/unnhal-acc-common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-common.so \
     vendor/oneplus/sm8350-common/proprietary/vendor/lib64/unnhal-acc-gpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-gpu.so \
@@ -1243,6 +1241,8 @@ PRODUCT_PACKAGES += \
     libEGL_adreno_libEGL_adreno_symlink32 \
     libGLESv2_adreno_libGLESv2_adreno_symlink32 \
     libq3dtools_adreno_libq3dtools_adreno_symlink32 \
+    libsns_device_mode_skel_libsns_device_mode_skel_symlink64 \
+    libsns_low_lat_stream_skel_libsns_low_lat_stream_skel_symlink64 \
     libEGL_adreno_libEGL_adreno_symlink64 \
     libGLESv2_adreno_libGLESv2_adreno_symlink64 \
     libq3dtools_adreno_libq3dtools_adreno_symlink64

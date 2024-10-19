@@ -380,6 +380,20 @@ install_symlink {
 }
 
 install_symlink {
+	name: "libsns_device_mode_skel_libsns_device_mode_skel_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/rfsa/adsp/libsns_device_mode_skel.so",
+	symlink_target: "/vendor/lib/rfsa/adsp/libsns_device_mode_skel.so",
+}
+
+install_symlink {
+	name: "libsns_low_lat_stream_skel_libsns_low_lat_stream_skel_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/rfsa/adsp/libsns_low_lat_stream_skel.so",
+	symlink_target: "/vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so",
+}
+
+install_symlink {
 	name: "libEGL_adreno_libEGL_adreno_symlink64",
 	soc_specific: true,
 	installed_location: "lib64/libEGL_adreno.so",
