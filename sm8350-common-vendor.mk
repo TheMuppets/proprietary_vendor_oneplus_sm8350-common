@@ -189,6 +189,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8350-common/proprietary/odm/lib/libaiboost_qnn_sr.so:$(TARGET_COPY_OUT_ODM)/lib/libaiboost_qnn_sr.so \
     vendor/oneplus/sm8350-common/proprietary/odm/lib/libaiboost_sr.so:$(TARGET_COPY_OUT_ODM)/lib/libaiboost_sr.so \
     vendor/oneplus/sm8350-common/proprietary/odm/lib/libaiboost_ubwc.so:$(TARGET_COPY_OUT_ODM)/lib/libaiboost_ubwc.so \
+    vendor/oneplus/sm8350-common/proprietary/odm/lib/libc++_shared.so:$(TARGET_COPY_OUT_ODM)/lib/libc++_shared.so \
     vendor/oneplus/sm8350-common/proprietary/odm/lib/liboplusvppfilter.so:$(TARGET_COPY_OUT_ODM)/lib/liboplusvppfilter.so \
     vendor/oneplus/sm8350-common/proprietary/odm/lib/libosie_process.so:$(TARGET_COPY_OUT_ODM)/lib/libosie_process.so \
     vendor/oneplus/sm8350-common/proprietary/odm/lib/libosie_stub.so:$(TARGET_COPY_OUT_ODM)/lib/libosie_stub.so \
@@ -196,6 +197,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8350-common/proprietary/odm/lib64/lib-virtual-modem-protos.so:$(TARGET_COPY_OUT_ODM)/lib64/lib-virtual-modem-protos.so \
     vendor/oneplus/sm8350-common/proprietary/odm/lib64/libQnnHtpAltPrepStub.so:$(TARGET_COPY_OUT_ODM)/lib64/libQnnHtpAltPrepStub.so \
     vendor/oneplus/sm8350-common/proprietary/odm/lib64/libQnnHtpStub.so:$(TARGET_COPY_OUT_ODM)/lib64/libQnnHtpStub.so \
+    vendor/oneplus/sm8350-common/proprietary/odm/lib64/libc++_shared.so:$(TARGET_COPY_OUT_ODM)/lib64/libc++_shared.so \
     vendor/oneplus/sm8350-common/proprietary/odm/lib64/libcommcenterfw.so:$(TARGET_COPY_OUT_ODM)/lib64/libcommcenterfw.so \
     vendor/oneplus/sm8350-common/proprietary/odm/lib64/libcommcenterutils.so:$(TARGET_COPY_OUT_ODM)/lib64/libcommcenterutils.so \
     vendor/oneplus/sm8350-common/proprietary/odm/lib64/libdmtp-protos-lite.so:$(TARGET_COPY_OUT_ODM)/lib64/libdmtp-protos-lite.so \
