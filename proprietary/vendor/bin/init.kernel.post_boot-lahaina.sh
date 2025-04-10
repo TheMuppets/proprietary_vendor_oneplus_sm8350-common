@@ -316,13 +316,13 @@ echo "710400,45000,1881600,50000,0"  > /sys/module/cpufreq_effiency/parameters/c
 echo "844800,50000,2035200,55000,0"  > /sys/module/cpufreq_effiency/parameters/cluster2_effiency
 
 # configure governor settings for silver cluster
-echo "uag" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
+echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
 echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us
 echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us
 if [ $rev == "1.0" ]; then
-	echo 1190400 > /sys/devices/system/cpu/cpufreq/policy0/uag/hispeed_freq
+	echo 1190400 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_freq
 else
-	echo 1209600 > /sys/devices/system/cpu/cpufreq/policy0/uag/hispeed_freq
+	echo 1209600 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_freq
 fi
 echo 691200 > /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
 echo 1 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/pl
@@ -336,28 +336,28 @@ fi
 echo 120 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
 
 # configure governor settings for gold cluster
-echo "uag" > /sys/devices/system/cpu/cpufreq/policy4/scaling_governor
+echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy4/scaling_governor
 echo 0 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/down_rate_limit_us
 echo 0 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/up_rate_limit_us
 if [ $rev == "1.0" ]; then
-	echo 1497600 > /sys/devices/system/cpu/cpufreq/policy4/uag/hispeed_freq
+	echo 1497600 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/hispeed_freq
 else
-	echo 1555200 > /sys/devices/system/cpu/cpufreq/policy4/uag/hispeed_freq
+	echo 1555200 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/hispeed_freq
 fi
 echo 1 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/pl
-echo "80 2112000:95" > /sys/devices/system/cpu/cpufreq/policy4/uag/target_loads
+echo "80 2112000:95" > /sys/devices/system/cpu/cpufreq/policy4/schedutil/target_loads
 
 # configure governor settings for gold+ cluster
-echo "uag" > /sys/devices/system/cpu/cpufreq/policy7/scaling_governor
+echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy7/scaling_governor
 echo 0 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/down_rate_limit_us
 echo 0 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/up_rate_limit_us
 if [ $rev == "1.0" ]; then
-	echo 1536000 > /sys/devices/system/cpu/cpufreq/policy7/uag/hispeed_freq
+	echo 1536000 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/hispeed_freq
 else
-	echo 1670400 > /sys/devices/system/cpu/cpufreq/policy7/uag/hispeed_freq
+	echo 1670400 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/hispeed_freq
 fi
 echo 1 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/pl
-echo "80 2380800:95" > /sys/devices/system/cpu/cpufreq/policy7/uag/target_loads
+echo "80 2380800:95" > /sys/devices/system/cpu/cpufreq/policy7/schedutil/target_loads
 
 # configure bus-dcvs
 for device in /sys/devices/platform/soc
